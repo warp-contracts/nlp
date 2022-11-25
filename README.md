@@ -5,6 +5,8 @@ An example of Machine Learning Warp smart contracts
 
 ## Getting started
 
+Being inside the `contracts` folder:
+
 1. Install necessary dependencies
 
     ```
@@ -44,7 +46,7 @@ Which persists a data item in the contract's state that could be used for traini
 
 Process all of the stored data items to train the model 
 
-### getAswer(input)
+### process(input)
 
 Evaluates the trained model against the *input* parameter 
 

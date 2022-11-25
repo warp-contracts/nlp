@@ -34,7 +34,7 @@ async function deploy() {
   fs.writeFileSync('./tmp/tmp-nlp-tx-id.txt', contractTxId);
 }
 
-async function process() {
+async function addDataAndTrain() {
   
   try {   
 
@@ -58,15 +58,6 @@ async function process() {
       function: "train"
     });
 
-
-    // // let response = await contract.viewState<any>({
-    // //   function: "process",
-    // //   lang: 'en',
-    // //   text: 'Hello there'
-    // // });
-
-    // console.log(response);
-
     const {cachedValue} = await contract.readState();
 
     console.log("State: ");
@@ -82,18 +73,7 @@ async function process() {
 
 (async function main() {
   await deploy();
-  await process().catch((e) => console.error(e));
-  // var manager = new NlpManager({ languages: ['en'] });
-  // manager.addDocument('en', 'goodbye for now', 'greetings.bye');
-  // await manager.train();
-  // let model = manager.export();
-  // console.log(model);
-
-  // var m2 = new NlpManager({ languages: ['en'] });
-  // m2.import(model);
-  // const response = await m2.process('en', 'I should go now');
-  // console.log(response);
-
+  await addDataAndTrain().catch((e) => console.error(e));
 })();
 
 async function addData(contract: Contract<any>, type:any, content:any, category:any) {

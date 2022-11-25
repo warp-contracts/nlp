@@ -4,7 +4,7 @@ export async function handle(state, action) {
 
   if (input.function === 'train') {
     const manager = new SmartWeave.extensions.NlpManager({
-      languages: ['en'], forceNER: true, nlu: { log: true }
+      languages: ['en'], forceNER: true, nlu: { log: false }
     });
 
     if (state.model) {
@@ -35,7 +35,7 @@ export async function handle(state, action) {
 
   if (input.function === 'process') {
     const manager = new SmartWeave.extensions.NlpManager({
-      languages: ['en'], forceNER: true, nlu: { log: true }
+      languages: ['en'], forceNER: true, nlu: { log: false }
     });  
     
     if (state.model) {
