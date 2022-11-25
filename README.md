@@ -34,7 +34,7 @@ Being inside the `contracts` folder:
 
 ##  How it works
 
-The project is built using [Warp contracts](https://github.com/warp-contracts) and the open sources NLP (Nature Language Processing) library [NLP.js](https://github.com/axa-group/nlp.js). The combination was possible thanks to the newly introduced [plugin system](https://github.com/warp-contracts/warp-contracts-plugins) for Warp contracts.  
+The project is built using [Warp Contracts](https://github.com/warp-contracts) and the open source NLP (Nature Language Processing) library [NLP.js](https://github.com/axa-group/nlp.js). The combination was possible thanks to the newly introduced [plugin system](https://github.com/warp-contracts/warp-contracts-plugins) for Warp contracts.  
 
 The main contract consists of 3 functions: 
 
@@ -52,18 +52,18 @@ Evaluates the trained model against the *input* parameter
 
 ## Why using smart-contracts for ML?
 
-1. Transparency
-Users can audit how the model was trained and on which data sources
-2. Incentivisation
-Actors providing data that improves the quality of the model could be automatically rewarded
-3. Accessibility & Interoperability
-The model could be natively used from other smart contracts
-4. Permanence
-The model is stored on Arweave and will remain operational without incurring additional maintenance costs
+1. Transparency.   
+Users can audit how the model was trained and on which data sources.
+2. Incentivisation.   
+Actors providing data that improves the quality of the model could be automatically rewarded.
+3. Accessibility & Interoperability.   
+The model could be natively used from other smart contracts.
+4. Permanence.   
+The model is stored on Arweave and will remain operational without incurring additional maintenance costs.
 
 ##  Future work
 
-This project is just a proof of concept how [Warp contracts](https://github.com/warp-contracts) may facilitate the deployment of machine learning projects. In the future will be interesting to explore the following areas: 
+This project is just a proof of concept how [Warp Contracts](https://github.com/warp-contracts) may facilitate the deployment of machine learning projects. In the future it will be interesting to explore the following areas: 
 
 1. Privacy preserving learning (provision of sensitive data) 
 2. Federated learning (different models combining state to achieve better performance)
