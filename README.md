@@ -19,7 +19,9 @@ An example of Machine Learning Warp smart contracts
     
 3. Put your Arweave jwk wallet in the following location: 
 
-    `.secrets/jwk.json`
+     ```
+    .secrets/jwk.json
+     ```
 
 3. Deploy contract and train model
 
@@ -36,12 +38,14 @@ An example of Machine Learning Warp smart contracts
 
     The model should respond with an answer, like: 
     
-    `Greetings!`
+     ```
+     Greetings!
+     ```
 
 
 ##  How it works
 
-The project is built using [Warp Contracts](https://github.com/warp-contracts) and the open source NLP (Nature Language Processing) library [NLP.js](https://github.com/axa-group/nlp.js). The combination was possible thanks to the newly introduced [plugin system](https://github.com/warp-contracts/warp-contracts-plugins) for Warp contracts.  
+The project is built using [Warp Contracts](https://github.com/warp-contracts) and the open-source NLP (Nature Language Processing) library [NLP.js](https://github.com/axa-group/nlp.js). The combination was possible thanks to the newly introduced [plugin system](https://github.com/warp-contracts/warp-contracts-plugins) for Warp contracts.  
 
 The main contract consists of 3 functions: 
 
@@ -70,9 +74,9 @@ The model is stored on Arweave and will remain operational without incurring add
 
 ##  Future work
 
-This project is just a proof of concept how [Warp Contracts](https://github.com/warp-contracts) may facilitate the deployment of machine learning projects. In the future it will be interesting to explore the following areas: 
+This project is just a proof of concept of how [Warp Contracts](https://github.com/warp-contracts) may facilitate the deployment of machine learning projects. In the future it will be interesting to explore the following areas: 
 
-1. Privacy preserving learning (provision of sensitive data) 
+1. Privacy-preserving learning (provision of sensitive data) 
 2. Federated learning (different models combining state to achieve better performance)
 3. Robust economic incentives (rewarding users for high-quality inputs)
 
