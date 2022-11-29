@@ -5,8 +5,6 @@ An example of Machine Learning Warp smart contracts
 
 ## Getting started
 
-Being inside the `contracts` folder:
-
 1. Install necessary dependencies
 
     ```
@@ -18,6 +16,10 @@ Being inside the `contracts` folder:
     ```
     yarn build
     ```
+    
+3. Put your Arweave jwk wallet in the following location: 
+
+    `.secrets/jwk.json`
 
 3. Deploy contract and train model
 
@@ -26,10 +28,15 @@ Being inside the `contracts` folder:
     ```
 
 4. Play with the model providing different inputs
+   Passing your sentence as an argument (e.g. 'Hello')
+   
+    ```
+    yarn interact Hello
+    ```
 
-    ```
-    yarn interact
-    ```
+    The model should respond with an answer, like: 
+    
+    `Greetings!`
 
 
 ##  How it works
